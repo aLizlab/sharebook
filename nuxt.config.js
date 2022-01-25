@@ -1,4 +1,22 @@
+import { resolve } from 'path'
+
 export default {
+  alias: {
+    '~': resolve(__dirname, ''),
+    '@': resolve(__dirname, 'src'),
+    '@@types': resolve(__dirname, 'src/@types'),
+    '@@utils': resolve(__dirname, 'src/@utils'),
+    '@assets': resolve(__dirname, 'src/assets'),
+    '@components': resolve(__dirname, 'src/components'),
+    '@content': resolve(__dirname, 'src/content'),
+    '@layouts': resolve(__dirname, 'src/layouts'),
+    '@pages': resolve(__dirname, 'src/pages'),
+    '@plugins': resolve(__dirname, 'src/plugins'),
+    '@static': resolve(__dirname, 'src/static'),
+    '@store': resolve(__dirname, 'src/store'),
+    '@test': resolve(__dirname, 'src/test'),
+  },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -59,4 +77,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  srcDir: 'src/',
 }
