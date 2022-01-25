@@ -1,0 +1,12 @@
+@mixin flex(
+  $flex-horiz: null,
+  $flex-vert: null,
+  $flex-gap: null,
+  $flex-dir: null
+) {
+  display: flex;
+  justify-content: $flex-horiz;
+  align-items: $flex-vert;
+  gap: $flex-gap;
+  flex-direction: $flex-dir;
+}

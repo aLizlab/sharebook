@@ -1,0 +1,21 @@
+@import 'font';
+@import 'sectionWrap';
+@import 'transition';
+
+//::selection {
+//  @include bg($color-primary);
+//
+//  color: $color-white;
+//}
+
+html {
+  @include font(16px, null, 1.6, null, $fontFamily-primary);
+  @include bg($color-bg-primary);
+
+  //cursor: none;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $color-font-primary;
+}

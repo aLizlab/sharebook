@@ -1,0 +1,13 @@
+@import '../mixin';
+@import '../variable';
+
+.sectionWrap {
+  @include flex(center, center);
+  @include box-pd(null, $cont-wrap-space, null, $cont-wrap-space);
+
+  > .sectionWrap-inner {
+    @include box(100%);
+
+    max-width: $cont-wrap;
+  }
+}
