@@ -343,6 +343,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/style-resources',
+    '@nuxtjs/gtm',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
@@ -355,6 +356,11 @@ export default {
 
   styleResources: {
     scss: ['@assets/scss/mixin/index.scss', '@assets/scss/variable/index.scss'],
+  },
+
+  gtm: {
+    // Used as fallback if no runtime config is provided
+    id: process.env.GOOGLE_TAG_MANAGER_ID,
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
