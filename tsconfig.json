@@ -33,11 +33,16 @@
       "@static": ["src/static"],
       "@static/*": ["src/static/*"],
       "@store": ["src/store"],
-      "@store/*": ["src/store/*"],
-      "@test": ["src/test"],
-      "@test/*": ["src/test/*"]
+      "@store/*": ["src/store/*"]
     },
-    "types": ["@nuxt/types", "@nuxtjs/axios", "@nuxt/content", "@types/node"]
+    "types": [
+      "@nuxt/types",
+      "@nuxtjs/axios",
+      "@nuxtjs/i18n",
+      "@nuxt/content",
+      "@nuxt/image",
+      "@types/node"
+    ]
   },
   "exclude": ["node_modules", ".nuxt", "dist"]
 }

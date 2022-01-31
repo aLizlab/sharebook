@@ -13,5 +13,6 @@ module.exports = {
   // add your custom rules here
   rules: {
     'no-redeclare': 0,
+    'vue/multi-word-component-names': 0,
   },
 }
