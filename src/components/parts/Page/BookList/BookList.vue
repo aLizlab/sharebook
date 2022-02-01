@@ -62,6 +62,10 @@ export default Vue.extend({
     > #{$root}-cont-inner {
       @include flex(null, flex-start, 24px);
 
+      @include mq(lg) {
+        @include flex(null, null, 20px);
+      }
+
       > .NavSideBase {
         @include box-pd(24px);
 
@@ -70,6 +74,10 @@ export default Vue.extend({
         flex: 0 0 184px;
 
         @include mq(lg) {
+          flex: 0 0 152px;
+        }
+
+        @include mq(md) {
           display: none;
         }
       }

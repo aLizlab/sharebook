@@ -2,7 +2,7 @@
   <li class="ListBookItem">
     <NuxtLink :to="link" class="ListBookItem-link">
       <ImgBase
-        :src="thumbnail || '/ogp.png'"
+        :src="thumbnail"
         :width="484"
         :height="342.29"
         :alt="title"
@@ -30,8 +30,7 @@ export default Vue.extend({
     },
     thumbnail: {
       type: String,
-      required: false,
-      default: '/ogp.png',
+      required: true,
     },
     description: {
       type: String,

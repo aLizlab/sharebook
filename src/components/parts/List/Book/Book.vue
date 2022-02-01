@@ -1,6 +1,11 @@
 <template>
   <ul :class="{ '-hasNoSide': !hasSide }" class="ListBook">
-    <ListBookItem v-for="item in list" v-bind="item" :key="item.title" />
+    <ListBookItem
+      v-for="item in list"
+      v-bind="item"
+      :key="item.title"
+      :thumbnail="item.thumbnail || '/ogp.png'"
+    />
   </ul>
 </template>
 

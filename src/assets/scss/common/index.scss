@@ -19,11 +19,3 @@ html {
   -webkit-font-smoothing: antialiased;
   color: $color-font-primary;
 }
-
-picture {
-  display: flex;
-
-  > img {
-    @include box(100%, 100%);
-  }
-}

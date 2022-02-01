@@ -46,7 +46,7 @@ export default Vue.extend({
       deep: true,
     })
       .where({ type: ContentType.book })
-      .only(['title', 'slug', 'thumbnail', 'description'])
+      .only(['title', 'slug', 'thumbnail', 'description', 'path'])
       .fetch<ContentPreview>()) as ContentPreview[]
 
     this.page = _pageList.find((page) => page.slug === this.booksSlug)
