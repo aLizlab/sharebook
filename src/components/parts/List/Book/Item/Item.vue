@@ -4,7 +4,7 @@
       <ImgBase
         :src="thumbnail"
         :width="484"
-        :height="342.29"
+        :height="242.29"
         :alt="title"
         format="webp"
       />
