@@ -40,7 +40,7 @@
     "@nuxtjs/i18n": "^7.2.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@types/jest": "^27.4.0",
-    "core-js": "^3.19.3",
+    "core-js": "^3.26.1",
     "destyle.css": "^3.0.2",
     "nuxt": "^2.15.8",
     "util": "^0.12.4",
